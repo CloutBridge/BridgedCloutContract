@@ -30,7 +30,6 @@ contract BridgedClout is ERC20, Pausable{
         bridgeFee = _bridgeFee;
         mintFee = _mintFee;
         minimumBurn = _minimumBurn;
-        mintRequests[_operator];
         EthToBcltAddressBridge[_operator] = _bcltKey;
         BcltToEthAddressBridge[_bcltKey] = _operator;
     }
